@@ -1,0 +1,516 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Familjen Grotesk", sans-serif;
+  color: white;
+}
+
+.hamburger {
+  margin-left: 10px;
+}
+
+.desktop-menu ul li:after {
+  content: "";
+  width: 0%;
+  background-color: white;
+  transition: 0.4s;
+  display: block;
+  height: 2px;
+}
+
+.desktop-menu ul li:hover:after {
+  width: 100%;
+}
+
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .desktop-menu ul li {
+    display: none;
+  }
+}
+
+.counter h4 {
+  color: black;
+}
+
+.container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-left: 200px;
+}
+
+.counter {
+  margin: 20px;
+}
+
+.counter h4 {
+  font-size: 30px;
+}
+
+.last-para {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Open sans", sans-serif;
+}
+
+.hamburger-menu {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.footercont {
+  color: white;
+  transition: 0.3s;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.footercont:hover {
+  color: brown;
+}
+
+.logo img {
+  width: 150px;
+  height: 50px;
+  transition: 0.2s;
+}
+
+.logo img :hover {
+  border-bottom: 1px solid white;
+}
+
+.desktop-menu ul li:hover:after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+ul li {
+  color: white;
+}
+
+.header {
+  position: fixed;
+
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 35px;
+}
+
+.inner a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeBounce 5s infinite;
+}
+
+.second-sec {
+  background-image: url("../images/section-b.jpg");
+}
+
+section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-transform: uppercase;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  position: relative;
+  padding: 50px 0px;
+  background: #000;
+}
+
+.copy {
+  color: white;
+  margin-right: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Animation-Section {
+  background-image: url("../images/falcon-heavy.jpg");
+}
+
+footer p {
+  color: white;
+}
+
+.fa-brands {
+  margin: 10px;
+}
+
+.animation-sec {}
+
+.animation-sec {
+  background-image: url("../images/falcon-9.jpg");
+}
+
+span {
+  color: black;
+}
+
+.overlay-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+/* Stop body scroll */
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.animation-sec h3 {
+  color: white;
+  font-size: 50px;
+  font-family: "Open sans", sans-serif;
+}
+
+.stats {
+  color: black;
+  padding: 50px 0;
+}
+
+.counter h4 {
+  color: black;
+}
+
+.stats {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats div span {
+  font-size: 120px;
+}
+
+.stats div h4 {
+  font-size: 24px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 300;
+}
+
+.stats {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats div span {
+  font-size: 160px;
+}
+
+.stats div h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+footer p {
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.animation-sec p {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 18px;
+}
+
+footer p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-brands:hover {
+  color: #aaa;
+}
+
+@keyframes fadeBounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.last-sec {
+  background-image: url("../images/section-f.jpg");
+}
+
+.btn {
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.fifth-sec {
+  background-image: url("../images/section-e.jpg");
+}
+
+.fourth-sec {
+  background-image: url("../images/section-d.jpg");
+}
+
+.third-sec {
+  background-image: url("../images/section-c.jpg");
+}
+
+#counter {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+}
+
+.inner h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.3s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 12px 20px;
+  margin-top: 10px;
+}
+
+.inner h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.bg-dragon {
+  background-image: url("https://raw.githubusercontent.com/bradtraversy/spacex-website/main/img/dragon.webp");
+}
+
+.desktop-menu {
+  margin-right: 60px;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  .social-links {
+    flex-direction: column;
+    font-size: 22px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .inner h2,
+  h3,
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .social-links {
+    flex-direction: column;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 960px) {
+  .social-links {
+    flex-direction: column;
+    font-size: 22px;
+  }
+}
+
+.inner {
+  padding: 300px 60px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(5px);
+}
+
+.mobile-only {
+  display: none;
+}
+
+.hamburger-bottom {
+  transform: translateY(10px);
+}
+
+.hamburger {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.desktop-menu ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #000;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#mobile-menu ul li a:hover {
+  color: #aaa;
+}
+
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 40px;
+  width: 100%;
+}
+
+#mobile-menu ul li a {
+  color: #fff;
+  transition: color 0.6s;
+}
+
+#mobile-menu ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px #555 dotted;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 8px;
+}
+
+.first-sec {
+  background-image: url("../images/section-a.jpg");
+}
